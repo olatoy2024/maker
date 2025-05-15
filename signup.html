@@ -16,16 +16,18 @@
     <title>Maker | Sign Up</title>
   </head>
   <body>
-    <div class="h-screen grid grid-cols-2 overflow-scroll">
-      <section class="">
+    <div class="h-screen grid grid-cols-2">
+      <section class="max-h-screen">
         <img
           src="images/maker-house-image-1.png"
-          class="h-screen w-full"
+          class="max-h-screen w-full object-cover"
           alt="maker-house-image"
         />
       </section>
-      <section class="bg-backgroundColor-antiFlashWhite">
-        <div class="flex flex-col gap-10 w-full items-center px-5 py-5">
+      <section
+        class="bg-backgroundColor-antiFlashWhite max-h-screen flex flex-col items-center"
+      >
+        <div class="flex flex-col gap-8 w-full items-center px-5 py-5">
           <article class="self-end font-Poppins">
             <p class="text-black font-light inline-block text-sm">
               have an account?
@@ -33,7 +35,7 @@
             <button
               class="text-primary-malachite font-medium cursor-pointer text-sm"
             >
-              Sign In
+              <a href="/signin.html"> Sign In </a>
             </button>
           </article>
           <article class="font-Poppins self-center flex flex-col gap-8">
@@ -130,7 +132,7 @@
               >
                 <input
                   type="password"
-                  id="password"
+                  id="confirmPassword"
                   placeholder="Confirm Password"
                   class="w-full focus:outline-none placeholder-davyGrey"
                   onfocus="document.getElementById('confirmPassword-label').classList.add('border-primary-malachite')"
@@ -152,7 +154,7 @@
             </button>
           </form>
         </div>
-        <p class="text-davyGrey font-light text-sm text-center self-baseline">
+        <p class="text-davyGrey font-light text-sm text-center self-center">
           By continuing you indicate that you read and agreed to the Terms of
           Use
         </p>
