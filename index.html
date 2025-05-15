@@ -16,8 +16,8 @@
     <title>Maker | Sign Up</title>
   </head>
   <body>
-    <div class="h-screen grid grid-cols-2">
-      <section>
+    <div class="h-screen grid grid-cols-2 overflow-scroll">
+      <section class="">
         <img
           src="images/maker-house-image-1.png"
           class="h-screen w-full"
@@ -86,7 +86,7 @@
                   placeholder="Full Name"
                 />
               </label>
-              <p class=""></p>
+              <p class="">Incorrect username</p>
             </div>
             <div class="flex flex-col gap-2">
               <label for="email" class="bg-primary-white">
@@ -115,8 +115,9 @@
                 />
                 <img
                   src="images/password-close-blind.png"
-                  class="w-3 h-3"
+                  class="w-3 h-3 cursor-pointer"
                   alt="make password hidden"
+                  id="eyeicon"
                 />
               </label>
               <p class="">input correct password</p>
@@ -137,7 +138,7 @@
                 />
                 <img
                   src="images/password-close-blind.png"
-                  class="w-3 h-3"
+                  class="w-3 h-3 cursor-pointer"
                   alt="make password hidden"
                 />
               </label>
@@ -157,5 +158,7 @@
         </p>
       </section>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
