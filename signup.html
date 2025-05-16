@@ -17,12 +17,65 @@
   </head>
   <body>
     <div class="h-screen grid grid-cols-2">
-      <section class="max-h-screen">
-        <img
-          src="images/maker-house-image-1.png"
-          class="max-h-screen w-full object-cover"
-          alt="maker-house-image"
-        />
+      <section
+        class="max-h-screen bg-cover bg-center flex flex-col pl-12 pt-7"
+        style="background-image: url('images/maker-house-image-1.png')"
+      >
+        <article class="flex items-center gap-2">
+          <img
+            src="/images/maker-logo-2.svg"
+            class="h-5 w-5"
+            alt="maker logo"
+          />
+          <span class="font-medium text-primary-black font-Inter"
+            >Logo Here</span
+          >
+        </article>
+        <article class="flex flex-col my-auto items-start gap-2">
+          <div
+            class="bg-primary-malachite pl-2 pr-5 py-2 flex items-center gap-2 rounded-full"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-primary-black/30 backdrop-blur-md flex items-center justify-center"
+            >
+              <img src="/images/black-maker.png" class="h-5 w-5" alt="" />
+            </div>
+            <span class="font-Poppins text-primary-black font-normal"
+              >Royal Stock Images</span
+            >
+          </div>
+          <div
+            class="flex flex-col gap-1 items-start bg-primary-black/20 p-4 rounded-md backdrop-blur-[42.95px]"
+          >
+            <div
+              class="w-8 h-8 bg-vampireBlack rounded-md flex items-center justify-center"
+            >
+              <img
+                src="/images/maker-microscope-image.png"
+                class="w-5 h-5"
+                alt=""
+              />
+            </div>
+            <p
+              class="font-Roboto text-[1.125rem] text-primary-white leading-snug"
+            >
+              <span>Best Stock Photos and</span><br />
+              <span>Videos from across the</span><br />
+              <span>internet.</span>
+            </p>
+          </div>
+          <div
+            class="flex items-center gap-2 p-2 self-end bg-davyGrey rounded-full"
+          >
+            <img src="/images/white-flash-circle.svg" class="w-8 h-8" alt="" />
+
+            <p
+              class="font-Poppins font-normal text-[1.125rem] text-primary-white"
+            >
+              Image editor
+            </p>
+          </div>
+        </article>
       </section>
       <section
         class="bg-backgroundColor-antiFlashWhite max-h-screen flex flex-col items-center"
