@@ -7,7 +7,7 @@ const confirmPassword = document.querySelector("#confirmPassword");
 const eyeIconTwo = document.getElementById("eyeicon2");
 
 eyeIcon.onclick = function () {
-  if ((password.type === "password") === "password") {
+  if (password.type === "password") {
     password.type = "text";
 
     eyeIcon.src = "/images/eye-line.svg";
@@ -50,6 +50,6 @@ form.addEventListener("submit", (e) => {
 function getSignUpFormErrors(fullName, email, password, confirmPassword) {
   let errors = [];
   if (!fullName === "" || fullName === null) {
-    errors.push("Full Name is Required");
+    // errors.push("Full Name is Required");
   }
 }

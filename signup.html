@@ -65,7 +65,7 @@
             </p>
           </div>
           <div
-            class="flex items-center gap-2 p-2 self-end bg-davyGrey rounded-full"
+            class="flex items-center gap-2 px-4 py-2 self-end bg-davyGrey rounded-full mr-[-50px] md:z-10"
           >
             <img src="/images/white-flash-circle.svg" class="w-8 h-8" alt="" />
 
@@ -133,30 +133,30 @@
           </article>
           <form id="form" class="flex flex-col gap-4 w-full md:w-[500px]">
             <div class="flex flex-col gap-2">
-              <label for="fullName" class="bg-primary-white">
+              <div class="bg-primary-white">
                 <input
                   class="w-full px-3 py-2 placeholder-davyGrey border border-lightSilver rounded-md focus:ring-1 focus:ring-primary-malachite focus:outline-none"
                   type="text"
                   id="fullName"
                   placeholder="Full Name"
                 />
-              </label>
-              <p class="">Incorrect username</p>
+              </div>
+              <p class="text-red-500 hidden">Incorrect username</p>
             </div>
             <div class="flex flex-col gap-2">
-              <label for="email" class="bg-primary-white">
+              <div class="bg-primary-white">
                 <input
                   type="email"
                   id="email"
                   placeholder="Email"
                   class="w-full placeholder-davyGrey px-3 py-2 border rounded-md focus:ring-1 border-lightSilver focus:ring-primary-malachite focus:outline-none"
                 />
-              </label>
-              <p class="">input correct email</p>
+              </div>
+
+              <p class="text-red-500 incorrect-email hidden">Incorrect email</p>
             </div>
             <div class="flex flex-col gap-2">
-              <label
-                for="password"
+              <div
                 id="password-label"
                 class="bg-primary-white flex justify-between items-center px-3 py-2 rounded-md border border-lightSilver"
               >
@@ -174,12 +174,13 @@
                   alt="make password hidden"
                   id="eyeicon"
                 />
-              </label>
-              <p class="">input correct password</p>
+              </div>
+              <p class="password-error text-red-500 hidden">
+                password was not filled
+              </p>
             </div>
             <div class="flex flex-col gap-2">
-              <label
-                for="confirmPassword"
+              <div
                 id="confirmPassword-label"
                 class="bg-primary-white flex justify-between items-center px-3 py-2 rounded-md border border-lightSilver transition-all"
               >
@@ -197,8 +198,8 @@
                   alt="make password hidden"
                   id="eyeicon2"
                 />
-              </label>
-              <p class="">password does not match</p>
+              </div>
+              <p class="text-red-500 hidden">password does not match</p>
             </div>
             <button
               type="submit"
@@ -212,6 +213,9 @@
           By continuing you indicate that you read and agreed to the Terms of
           Use
         </p>
+        <span class="error-icon text-red-500">
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </span>
       </section>
     </div>
 
